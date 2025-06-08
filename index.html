@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assstes/css/steyl.css">
+    <script src="/assstes/js/index.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="container" aria-label="Primary Navigation">
+          <div class="logo" tabindex="0">WebDesigner</div>
+          <div class="nav-links" role="tablist" aria-label="Main Sections">
+            <button role="tab" aria-selected="true" aria-controls="home" id="tab-home" class="active">Home</button>
+            <button role="tab" aria-selected="false" aria-controls="resume" id="tab-resume">Resume</button>
+            <button role="tab" aria-selected="false" aria-controls="projects" id="tab-projects">Projects</button>
+            <button role="tab" aria-selected="false" aria-controls="contact" id="tab-contact">Contact</button>
+          </div>
+        </nav>
+      </header>
+      <main class="container">
+        <section id="home" role="tabpanel" tabindex="0" aria-labelledby="tab-home" class="active">
+          <h1>سلام، من امیرعباس زرخواه هستم</h1>
+          <p>طراح و توسعه‌دهنده وب با تجربه در ایجاد سایت‌های زیبا و کاربرپسند. تخصص در طراحی واکنش‌گرا و بهینه‌سازی تجربه کاربری.</p>
+        </section>
+        <section id="resume" role="tabpanel" tabindex="0" aria-labelledby="tab-resume">
+          <div class="repo-section">
+            <h2>تجربه</h2>
+            <div class="list-item">
+              <div class="list-item-title">طراح سایت </div>
+              <div class="list-item-subtitle">توسعه رابط‌های کاربری مدرن با React و Vue</div>
+            </div>
+            <div class="list-item">
+              <div class="list-item-title">طراح فرانت‌اند - استارتاپ دیجیتال (۲۰۱۷ - ۲۰۲۰)</div>
+              <div class="list-item-subtitle">طراحی و پیاده‌سازی صفحات واکنش‌گرا و قابل دسترس</div>
+            </div>
+          </div>
+          <div class="repo-section">
+            <h2>تحصیلات</h2>
+            <div class="list-item">
+              <div class="list-item-title">سال یازدهم شبکه</div>
+            </div>
+          </div>
+          <div class="repo-section">
+            <h2>مهارت‌ها</h2>
+            <ul class="item-list">
+              <li>HTML5, CSS3, JavaScript</li>
+              <li>React</li>
+              <li>Responsive Design & UX</li>
+              <li>Git & Version Control</li>
+              <li>Lorem.</li>
+            </ul>
+          </div>
+        </section>
+        <section id="projects" role="tabpanel" tabindex="0" aria-labelledby="tab-projects">
+          <article class="project-card" tabindex="0">
+            <h3 class="project-title">طراحی سایت فروشگاهی</h3>
+            <p class="project-desc">ایجاد یک فروشگاه اینترنتی کاملاً واکنش‌گرا با پنل مدیریت ساده و تجربه کاربری مدرن.</p>
+            <a href="https://github.com/Amir-7666" target="_blank" rel="noopener noreferrer" class="project-link">مشاهده در گیت‌هاب</a>
+          </article>
+          <article class="project-card" tabindex="0">
+            <h3 class="project-title">وب‌سایت وبلاگ شخصی</h3>
+            <p class="project-desc">طراحی و توسعه یک وبلاگ با ویژگی‌های خواندن، دسته‌بندی و جستجو مطالب.</p>
+            <a href="https://example.com/blog" target="_blank" rel="noopener noreferrer" class="project-link">بازدید وب‌سایت</a>
+          </article>
+          <article class="project-card" tabindex="0">
+            <h3 class="project-title">پشتیبانی پروژه متن‌باز</h3>
+            <p class="project-desc">همکاری در توسعه کتابخانه UI و رفع باگ‌ها با تمرکز بر استفاده آسان و سرعت عملکرد.</p>
+            <a href="https://github.com/Amir-7666" target="_blank" rel="noopener noreferrer" class="project-link">مشاهده در گیت‌هاب</a>
+          </article>
+        </section>
+        <section id="contact" role="tabpanel" tabindex="0" aria-labelledby="tab-contact">
+          <h2>تماس با من</h2>
+          <form id="contactForm" novalidate>
+            <label for="phone">شماره تلفن شما</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="^(\+?\d{1,4}[\s-])?(?:\(?\d{2,3}\)?[\s-]?)?[\d\s-]{5,15}$"
+              placeholder="+98 912 345 6789"
+              aria-describedby="phoneHelp"
+              required
+              autocomplete="tel"
+            />
+            <button type="submit">ارسال</button>
+            <div id="formMessage" class="form-message" role="alert" aria-live="polite" aria-atomic="true"></div>
+          </form>
+</body>
+</html>
